@@ -3,9 +3,19 @@
     padding: 0;
 }
 
+img {
+    display: block;
+
+}
+
 body {
     font-size: 20px;
     margin: 1rem;
+}
+
+.icon {
+    width: 600px;
+    margin: 0 auto;
 }
 
 p,
