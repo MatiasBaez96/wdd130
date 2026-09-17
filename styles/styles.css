@@ -1,3 +1,8 @@
+:root {
+    --color-blue: darkblue;
+    --solid-border: #000;
+}
+
 body {
     background-color: white;
 
@@ -24,8 +29,7 @@ aside {
 }
 
 h1 {
-
-    color: white;
+    color: var(--color-blue);
     padding: 16px;
     text-align: left;
     /* font-size: 2em; */
@@ -35,13 +39,13 @@ h1 {
 div {
     width: 400px;
     margin: 10px;
-    border: 1px solid #000000;
+    border: var(--solid-border);
     padding: 15px;
 
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--color-blue);
     padding: 10px;
 }
 
@@ -51,15 +55,11 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: darkblue;
-}
-
 main img {
     width: 150px;
     height: auto;
 
-    border: 1px solid black;
+    border: var(--solid-border);
 
     /*between the image and the border. */
     padding: 2px;
