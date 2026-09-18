@@ -1,0 +1,130 @@
+:root {
+
+    --primary-color: rgb(238, 238, 238);
+    --accent1-color: rgb(59, 97, 72);
+    --accent2-color: rgb(6, 29, 48);
+    --accent3-color: rgb(6, 34, 56);
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,
+a {
+    font-size: 25px;
+}
+
+header,
+main,
+footer {
+    width: 1500px;
+    margin: auto;
+}
+
+nav,
+p,
+section,
+article {
+    /* background-color: red; */
+    margin: 16px;
+    padding: 15px 0 0 0;
+}
+
+.socialmedia {
+    text-decoration: none;
+}
+
+header img {
+    padding: 0px;
+    width: 150px;
+    height: auto;
+}
+
+.links {
+    padding-left: 35px;
+}
+
+.hero {
+    position: relative;
+    padding: 20px 0 20px 0;
+    height: auto;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+
+    float: right;
+    height: 150px;
+    width: auto;
+}
+
+.on-image {
+    width: 1400px;
+    position: absolute;
+    left: 50px;
+    opacity: .7;
+    top: 800px;
+    padding: 25px;
+    background-color: var(--accent2-color);
+    position: absolute;
+}
+
+.on-image p {
+    /* background-color: red; */
+    width: 1200px;
+    color: white;
+}
+
+.intro-title {
+    font-size: 40px;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: whitesmoke;
+}
+
+footer {
+
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+footer p {
+    font-size: larger;
+    padding: 0;
+
+}
+
+footer nav {
+    padding: 0;
+
+}
+
+footer nav img {
+
+    display: inline;
+    background-color: white;
+    width: 80px;
+    height: auto;
+}
+
+.article-02 h2 {
+    color: white;
+    background-color: var(--accent3-color);
+    padding: 12px;
+    text-align: center;
+}
