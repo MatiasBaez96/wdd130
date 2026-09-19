@@ -21,7 +21,8 @@ a {
 header,
 main,
 footer {
-    width: 1500px;
+    width: 100%;
+    max-width: 1500px;
     margin: auto;
 }
 
