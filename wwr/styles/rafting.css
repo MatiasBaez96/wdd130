@@ -112,10 +112,22 @@ header nav ul {
 @media (max-width: 1500px) {
 
     .on-image {
+
         position: static;
         width: auto;
         margin: 20 px 16px;
         opacity: 1;
+    }
+
+    /* como estableci p {font-size: ;} 
+     n el principio, necesito hacerlo asi*/
+    .on-image p {
+        font-size: large;
+
+        /*cuando se achica la pantalla aumento un poco 
+        el padding en la parte inferior para qe la foto 
+        no qede afuer del marco azul mientras se va achicando*/
+        padding: 0 0 30px 0;
     }
 
 }
