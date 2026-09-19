@@ -37,7 +37,6 @@ footer {
 
 }
 
-h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -78,6 +77,14 @@ header nav ul {
 
 }
 
+.hero article {
+    background-color: var(--accent3-color);
+}
+
+.hero h1 {
+    color: aliceblue;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -116,7 +123,7 @@ header nav ul {
         position: static;
         text-align: center;
         width: auto;
-        margin: 20 px 16px;
+        margin: 20px 16px;
         opacity: 1;
     }
 
@@ -130,6 +137,7 @@ header nav ul {
     /* como estableci p {font-size: ;} 
      n el principio, necesito hacerlo asi*/
     .on-image p {
+
         font-size: large;
 
         /*cuando se achica la pantalla aumento un poco 
