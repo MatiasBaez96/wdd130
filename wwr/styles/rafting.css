@@ -109,7 +109,7 @@ header nav ul {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
 
     .on-image {
         position: static;
