@@ -82,6 +82,7 @@ header nav ul {
 }
 
 .hero h1 {
+    position: absolute;
     color: aliceblue;
 }
 
@@ -98,8 +99,7 @@ header nav ul {
     width: auto;
 }
 
-.on-image {
-
+.hero article {
     position: absolute;
 
     width: calc(100% - 80px);
@@ -113,7 +113,6 @@ header nav ul {
 
     padding: 25px;
     background-color: var(--accent2-color);
-
 }
 
 @media (max-width: 1500px) {
@@ -202,3 +201,9 @@ footer nav img {
     padding: 12px;
     text-align: center;
 }
+
+/*
+
+
+
+*/
