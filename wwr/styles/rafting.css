@@ -4,6 +4,8 @@
     --accent1-color: rgb(59, 97, 72);
     --accent2-color: rgb(6, 29, 48);
     --accent3-color: rgb(6, 34, 56);
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -18,19 +20,35 @@ a {
     font-size: 25px;
 }
 
+header {
+    background-color: var(--primary-color);
+}
+
 header,
 main,
 footer {
     width: 100%;
     max-width: 1500px;
     margin: auto;
+
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
 nav,
 p,
 section,
 article {
-    /* background-color: red; */
+
     margin: 16px;
     padding: 15px 0 0 0;
 }
@@ -45,7 +63,7 @@ header img {
     height: auto;
 }
 
-.links {
+header nav ul {
     padding-left: 35px;
 }
 
@@ -72,9 +90,9 @@ header img {
 .on-image {
     width: 1400px;
     position: absolute;
-    left: 50px;
+    left: 40px;
     opacity: .7;
-    top: 800px;
+    top: 775px;
     padding: 25px;
     background-color: var(--accent2-color);
     position: absolute;
@@ -83,7 +101,7 @@ header img {
 .on-image p {
     /* background-color: red; */
     width: 1200px;
-    color: white;
+    color: var(--primary-color);
 }
 
 .intro-title {
@@ -113,6 +131,10 @@ footer p {
 footer nav {
     padding: 0;
 
+}
+
+.socialmedia {
+    text-decoration: none;
 }
 
 footer nav img {
