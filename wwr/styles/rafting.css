@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-footer nav a {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -58,10 +58,6 @@ article {
 
     margin: 16px;
     padding: 15px 0 0 0;
-}
-
-.socialmedia {
-    text-decoration: none;
 }
 
 header img {
