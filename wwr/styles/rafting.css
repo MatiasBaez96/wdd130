@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+.socialmedia {
+    text-decoration: none;
+}
+
 p,
 a {
     font-size: 25px;
@@ -181,10 +185,6 @@ footer p {
 footer nav {
     padding: 0;
 
-}
-
-.socialmedia {
-    text-decoration: none;
 }
 
 footer nav img {
