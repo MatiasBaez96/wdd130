@@ -27,7 +27,11 @@ header {
 header,
 main,
 footer {
+
+    /*ancho al 100% pero no un px fij0*/
     width: 100%;
+
+    /*solo limite del maximo*/
     max-width: 1500px;
     margin: auto;
 
@@ -88,19 +92,37 @@ header nav ul {
 }
 
 .on-image {
-    width: 1400px;
+
     position: absolute;
+
+    width: calc(100% - 80px);
+    max-width: 1400px;
+
+    top: 50%;
     left: 40px;
+    right: 40px;
+
     opacity: .7;
-    top: 775px;
+
     padding: 25px;
     background-color: var(--accent2-color);
-    position: absolute;
+
+}
+
+@media (max-width: 700px) {
+
+    .on-image {
+        position: static;
+        width: auto;
+        margin: 20 px 16px;
+        opacity: 1;
+    }
+
 }
 
 .on-image p {
     /* background-color: red; */
-    width: 1200px;
+    width: 100%;
     color: var(--primary-color);
 }
 
