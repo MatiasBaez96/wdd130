@@ -114,9 +114,17 @@ header nav ul {
     .on-image {
 
         position: static;
+        text-align: center;
         width: auto;
         margin: 20 px 16px;
         opacity: 1;
+    }
+
+    .on-image img {
+        float: none !important;
+        display: block;
+        margin: auto;
+
     }
 
     /* como estableci p {font-size: ;} 
@@ -127,13 +135,14 @@ header nav ul {
         /*cuando se achica la pantalla aumento un poco 
         el padding en la parte inferior para qe la foto 
         no qede afuer del marco azul mientras se va achicando*/
+        clear: right;
         padding: 0 0 30px 0;
     }
 
 }
 
 .on-image p {
-    /* background-color: red; */
+
     width: 100%;
     color: var(--primary-color);
 }
