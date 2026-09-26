@@ -211,11 +211,22 @@ footer nav img {
     height: auto;
 }
 
+.article-02 div {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 3;
+    padding: 1rem;
+}
+
 .article-02 h2 {
     color: white;
     background-color: var(--accent3-color);
     padding: 12px;
     text-align: center;
+}
+
+.article-02 p {
+    display: block;
 }
 
 /* figure section */
