@@ -14,22 +14,42 @@ body {
 
 }
 
-main {
-    max-width: 840px;
-}
-
 aside img {
 
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     height: auto;
+}
+
+header,
+.grid,
+footer {
+
+    max-width: 800px;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 aside {
     position: relative;
     width: 20rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: .5rem;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -43,29 +63,37 @@ aside h2 {
 
 h1 {
     color: var(--color-blue);
-    padding: 16px;
+    padding: 1rem;
     text-align: left;
-    /* font-size: 2em; */
+    border-bottom: var(--solid-border);
+
 }
 
 /* no tengo div en los archivos qe uso*/
 div {
-    width: 400px;
+    /* width: 800px; */
     margin: 10px;
-    border: var(--solid-border);
-    padding: 15px;
+    /* border: var(--solid-border); */
+    /* padding: 15px; */
 
 }
 
 nav {
     background-color: var(--color-blue);
-    padding: 10px;
+    padding: 1rem;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 main img {
@@ -83,7 +111,7 @@ main img {
 }
 
 p {
-    padding: 0;
+    padding: .2rem;
 }
 
 footer {
@@ -95,7 +123,7 @@ footer {
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1.5rem;
     background-color: #ddd;

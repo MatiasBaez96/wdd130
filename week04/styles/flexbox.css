@@ -8,6 +8,12 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+
+    /* curso partes: */
+    flex-direction: row;
+    justify-content: space-aroun;
+    align-items: baseline;
+
 }
 
 .flex-item {
