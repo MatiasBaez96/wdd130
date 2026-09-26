@@ -15,6 +15,43 @@
     box-sizing: border-box;
 }
 
+header img {
+    padding: 0px;
+    width: 150px;
+    height: auto;
+}
+
+header {
+    opacity: .7;
+    background-color: var(--primary-color);
+    align-items: center;
+    max-width: 1500px;
+    width: 1;
+    margin: 0;
+    display: grid;
+}
+
+header a {
+    color: black;
+}
+
+header nav ul {
+
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+header nav ul a {
+    display: block;
+    font-weight: 750;
+    padding: .5rem;
+    text-decoration: none;
+    /* font-size: 1.2rem; */
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -22,10 +59,6 @@
 p,
 a {
     font-size: 25px;
-}
-
-header {
-    background-color: var(--primary-color);
 }
 
 header,
@@ -53,21 +86,10 @@ body {
 
 nav,
 p,
-section,
 article {
 
     margin: 16px;
     padding: 15px 0 0 0;
-}
-
-header img {
-    padding: 0px;
-    width: 150px;
-    height: auto;
-}
-
-header nav ul {
-    padding-left: 35px;
 }
 
 .hero {
@@ -113,6 +135,10 @@ header nav ul {
 
     padding: 25px;
     background-color: var(--accent2-color);
+}
+
+.on-image {
+    margin-top: 160px;
 }
 
 @media (max-width: 1500px) {
@@ -198,8 +224,32 @@ footer nav img {
     text-align: center;
 }
 
-/*
+/* figure section */
 
+figure img {
+    max-width: 250px;
+    padding: 1rem;
+    display: block;
+}
 
+.galeria {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
 
-*/
+.galeria figure {
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.galeria img {
+    display: block;
+}
+
+.galeria figcaption {
+    padding: 10px;
+    font-size: 18px;
+}
