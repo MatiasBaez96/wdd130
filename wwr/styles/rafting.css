@@ -214,7 +214,6 @@ footer nav img {
 .article-02 div {
     display: flex;
     justify-content: center;
-    grid-template-columns: 3;
     padding: 1rem;
 }
 
