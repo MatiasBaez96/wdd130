@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Exercise</title>
-
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
-    <main>
+
+    <main class="form-container">
+
         <form>
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="email">Email</label>
-            <input type="email" id="useremail" name="useremail" required>
+            <h1>WDD | HTML Form - User Poll</h1>
 
-            <!-- another valid way -->
-            <!-- <label>Full Name: <input type="text" name="fullname" required></label>
-            <label>Email: <input type="email" name="useremail" required></label> -->
+            <fieldset>
+                <legend>Personal Information</legend>
 
-            <label for="browser">What is your favourite internet browser?</label>
-            <select name="browser" id="browser">
-                <option value="chrome">chrome</option>
-                <option value="firefox">firefox</option>
-                <option value="edge">edge</option>
-                <option value="brave">brave</option>
-                <option value="other">other</option>
-            </select>
-            <label for="pet">List the places you have lived.</label>
-            <select name="pet" id="pet">
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-                <option value="pet"></option>
-                <option value="checkbox"></option>
-                <option value="feedback"></option>
-                <textarea name="feedback" id="feedback" rows="4"
-                  placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
-            </select>
-            <button type="submit">Submit Poll</button>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="browser">
+                        What is your favourite internet browser?
+                    </label>
+
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="form-item column1">
+                    <label for="places">
+                        List the places you have lived:
+                    </label>
+
+                    <textarea name="places" id="places" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </div>
+
+                <button type="submit">Submit Poll</button>
+
+            </fieldset>
         </form>
-    </main>
-</body>
-<footer>
 
-</footer>
+    </main>
+
+    <footer>
+        <p>© 2026 WDD 130 - HTML Form</p>
+    </footer>
+
+</body>
 
 </html>
