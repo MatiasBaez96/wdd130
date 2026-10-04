@@ -257,3 +257,7 @@ figure img {
     padding: 10px;
     font-size: 18px;
 }
+
+input[type="checkbox"] {
+    display: block;
+}
