@@ -5,12 +5,8 @@
 }
 
 form {
-    width: 650px;
+    width: 100%;
     margin: 0;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0);
-    border-radius: .5rem;
-    background-color: #eee;
     display: grid;
 }
 
@@ -20,6 +16,11 @@ button,
 select,
 textarea {
     font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 0;
 }
 
 button {
@@ -42,11 +43,6 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
-label {
-    text-align: right;
-    padding-right: 1rem;
-}
-
 body {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
@@ -56,35 +52,92 @@ body {
 
 fieldset {
     display: grid;
-    gap: 1.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    gap: 1rem;
+    border: none;
+    width: 100%;
 }
 
 header {
     margin: 0 auto;
-    width: 650px;
-
 }
 
 h1 {
     margin: 1rem;
     font-size: 1.5em;
-    color: navy;
     text-align: center;
 }
 
-.form-item {
+/* FULL NAME Y EMAIL */
+.data {
     display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
     align-items: center;
 }
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
+.data label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
-.column2 {
-    grid-template-columns: 1fr 2fr;
+.data input {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* MESSAGE PURPOSE */
+.message-purpose {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
+    align-items: start;
+}
+
+.message-purpose label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.Message {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
+    align-items: start;
+}
+
+.Message label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.Message textarea {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+fieldset button {
+    width: auto;
 }
