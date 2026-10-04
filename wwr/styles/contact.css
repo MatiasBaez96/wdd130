@@ -248,3 +248,147 @@ figure img {
     width: 100%;
     align-self: center;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 0;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    border: none;
+    width: 100%;
+}
+
+header {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* FULL NAME Y EMAIL */
+.data {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.data label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.data input {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* MESSAGE PURPOSE */
+.message-purpose {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
+    align-items: start;
+}
+
+.message-purpose label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.Message {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 15px;
+    align-items: start;
+}
+
+.Message label {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.Message textarea {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+fieldset button {
+    width: auto;
+}
