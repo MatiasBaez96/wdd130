@@ -72,6 +72,11 @@ footer {
 
 }
 
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -83,6 +88,47 @@ article {
 
     margin: 16px;
     padding: 15px 0 0 0;
+}
+
+.hero {
+    position: relative;
+    padding: 20px 0 20px 0;
+    height: auto;
+
+}
+
+.hero h1 {
+    position: absolute;
+    color: aliceblue;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+
+    float: right;
+    height: 150px;
+    width: auto;
+}
+
+.hero article {
+    position: absolute;
+
+    width: calc(100% - 80px);
+    max-width: 1400px;
+
+    top: 50%;
+    left: 40px;
+    right: 40px;
+
+    opacity: .7;
+
+    padding: 25px;
+    background-color: var(--accent2-color);
 }
 
 .on-image {
@@ -119,6 +165,7 @@ article {
         clear: right;
         padding: 0 0 30px 0;
     }
+
 }
 
 .on-image p {
@@ -127,16 +174,16 @@ article {
     color: var(--primary-color);
 }
 
-table {
-    float: right;
-}
-
-/* cambios : position: absolute; */
-/* position: absolute; */
-/* width: 100%; */
 .intro-title {
+    font-size: 40px;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    padding: 20px;
     text-align: center;
-
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: whitesmoke;
 }
 
 footer {
@@ -181,12 +228,6 @@ footer nav img {
     display: block;
 }
 
-.rticle-02 {
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-}
-
 /* figure section */
 
 figure img {
@@ -198,7 +239,6 @@ figure img {
 .galeria {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
@@ -218,177 +258,6 @@ figure img {
     font-size: 18px;
 }
 
-.message-purpose {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
-    gap: 40px;
-    padding: 30px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero > form {
-    width: 100%;
-    align-self: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-form {
-    width: 100%;
-    margin: 0;
-    display: grid;
-}
-
-label,
-input,
-button,
-select,
-textarea {
-    font-family: Roboto, Arial, sans-serif;
-}
-
-label {
-    text-align: left;
-    padding-right: 0;
-}
-
-button {
-    margin: 1rem;
-    background-color: navy;
-    color: #fff;
-    border: none;
-    border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.2rem;
-}
-
-button:hover {
-    background-color: darkgreen;
-}
-
 input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    background: #fff;
-}
-
-fieldset {
-    display: grid;
-    gap: 1rem;
-    border: none;
-    width: 100%;
-}
-
-header {
-    margin: 0 auto;
-}
-
-h1 {
-    margin: 1rem;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-/* FULL NAME Y EMAIL */
-.data {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    column-gap: 15px;
-    align-items: center;
-}
-
-.data label {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-}
-
-.data input {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    font-size: 1rem;
-}
-
-/* MESSAGE PURPOSE */
-.message-purpose {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    column-gap: 15px;
-    align-items: start;
-}
-
-.message-purpose label {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.options label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.Message {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    column-gap: 15px;
-    align-items: start;
-}
-
-.Message label {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-}
-
-.Message textarea {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    font-size: 1rem;
-    resize: vertical;
-}
-
-fieldset button {
-    width: auto;
+    display: block;
 }
