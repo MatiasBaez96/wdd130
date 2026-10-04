@@ -8,13 +8,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 header img {
     padding: 0px;
     width: 150px;
@@ -70,11 +63,6 @@ footer {
 
     margin: auto;
 
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 nav,
@@ -218,18 +206,6 @@ figure img {
     font-size: 18px;
 }
 
-.message-purpose {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -339,18 +315,11 @@ h1 {
     font-size: 1rem;
 }
 
-/* MESSAGE PURPOSE */
 .message-purpose {
     display: grid;
     grid-template-columns: 150px 1fr;
     column-gap: 15px;
     align-items: start;
-}
-
-.message-purpose label {
-    text-align: left;
-    padding: 0;
-    margin: 0;
 }
 
 .options {

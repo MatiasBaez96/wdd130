@@ -43,7 +43,7 @@ header nav ul {
 
 }
 
-header nav ul a {
+nav ul a {
     display: block;
     font-weight: 750;
     padding: .5rem;
