@@ -20,7 +20,7 @@ header {
     align-items: center;
     max-width: 1500px;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     display: grid;
 }
 
@@ -281,10 +281,6 @@ fieldset {
     gap: 1rem;
     border: none;
     width: 100%;
-}
-
-header {
-    margin: 0 auto;
 }
 
 h1 {
