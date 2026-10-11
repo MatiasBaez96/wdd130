@@ -10,6 +10,7 @@ header {
     align-items: center;
     max-width: 1350px;
     margin: 0 auto;
+    --primary-color: rgb(238, 238, 238);
 }
 
 header img {
@@ -74,7 +75,7 @@ form {
     margin: 2rem;
     align-items: center;
     top: 58rem;
-    left: 52rem;
+    left: 43.5rem;
 }
 
 form h2 {
