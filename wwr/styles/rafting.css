@@ -187,7 +187,7 @@ figure img {
     object-fit: cover;
 }
 
-.hero > form {
+.hero form {
     width: 100%;
     align-self: center;
 }
