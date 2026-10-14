@@ -7,44 +7,56 @@
     <meta name="author" content="Matias Baez">
     <meta name="description"
       content="Experience exciting rafting adventures with our professional rafting company.">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>About Us and the rafting company name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Home | White Water Rafting Company</title>
 </head>
 
-<body>
+<body class="home">
 
     <!-- header -->
     <header>
-        <img src="images/logo.jpg" alt="">
+        <img src="images/logo.jpg" alt="Exciting Expeditions logo">
 
         <nav>
-            <ul>
-                <li><a href="https://matiasbaez96.github.io/wdd130/wwr/index.html">Home</a></li>
-                <li><a href="https://matiasbaez96.github.io/wdd130/wwr/about.html">About Us</a></li>
-                <li><a href="https://matiasbaez96.github.io/wdd130/wwr/trips.html">Trips</a></li>
-                <li><a href="https://matiasbaez96.github.io/wdd130/wwr/contact.html">Contact Us</a>
-                </li>
-            </ul>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
-
     </header>
 
     <!-- main -->
     <main>
 
-        <!-- image -->
+        <!-- hero -->
         <div class="hero">
-            <img src="images/rafting3.jpg" alt="company rafting adventure">
-
+            <img src="images/rafting3.jpg" alt="Rafters paddling through white water rapids">
             <h1>Brave the Rapids! Live the Adventure</h1>
-
-
         </div>
 
+        <!-- see trips -->
+        <aside class="trips-cta">
+            <h2>Ready for the River?</h2>
+            <p>Find the perfect trip for you and your group.</p>
+            <a href="trips.html" class="btn">See Trips</a>
+        </aside>
 
-        <form>
+        <!-- dos imagenes -->
+        <div class="images">
+            <img src="images/rafting22.jpg" alt="Raft running through a canyon">
+            <img src="images/rafting42.jpg" alt="Group enjoying a half day rafting trip">
+        </div>
+
+        <!-- newsletter -->
+        <form class="newsletter">
             <fieldset>
                 <h2>Join Our Newsletter</h2>
+
                 <div class="data">
                     <label for="fullname">Full Name:</label>
                     <input type="text" id="fullname" name="fullname" required>
@@ -54,31 +66,28 @@
                     <label for="useremail">Email:</label>
                     <input type="email" id="useremail" name="useremail" required>
                 </div>
-                <div class="button-container">
-                    <button type="submit">Subscribe</button>
-                </div>
 
+                <button type="submit">Subscribe</button>
             </fieldset>
         </form>
 
     </main>
 
+    <!-- footer -->
     <footer>
-
         <p>© 2026 💧 Exciting Expeditions 💧 Matias Baez</p>
 
         <nav class="socialmedia">
             <a href="https://www.facebook.com/">
-                <img src="images/social.png" alt="">
+                <img src="images/social.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="images/icons8-instagram-96.png" alt="">
+                <img src="images/icons8-instagram-96.png" alt="Instagram">
             </a>
-            <a href="https://www.linkedin.com">
-                <img src="images/linkedin.png" alt="">
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin.png" alt="LinkedIn">
             </a>
         </nav>
-
     </footer>
 </body>
 
