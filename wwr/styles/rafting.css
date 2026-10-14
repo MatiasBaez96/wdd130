@@ -3,18 +3,13 @@
    ========================================================== */
 :root {
     --primary-color: #0b4f5c;
-    /* verde azulado río */
     --accent1-color: #1f2d33;
-    /* texto oscuro */
     --accent2-color: #c2410c;
-    /* naranja (pasa contraste AA) */
     --accent3-color: #f6f1e7;
-    /* arena */
     --white: #ffffff;
     --heading-font: "Oswald", Arial, sans-serif;
     --body-font: "Source Sans 3", Arial, sans-serif;
     --content-width: 1100px;
-    /* padding lateral que alinea header/footer con el main */
     --side-space: max(24px, calc((100% - var(--content-width)) / 2 + 24px));
     --radius: 12px;
     --shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
@@ -37,7 +32,6 @@ body {
     line-height: 1.6;
 }
 
-/* header y footer a todo el ancho; main limitado y centrado */
 header,
 main,
 footer {
@@ -69,7 +63,7 @@ article {
 }
 
 /* ==========================================================
-   HEADER (CSS Grid)
+   HEADER 
    ========================================================== */
 header {
     display: grid;
@@ -87,7 +81,6 @@ header img {
     border-radius: 8px;
 }
 
-/* NAV (CSS Flex) */
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -117,7 +110,7 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   HERO (home y about)
+   HERO 
    ========================================================== */
 .hero {
     position: relative;
@@ -143,7 +136,6 @@ header nav a[aria-current="page"] {
     color: var(--white);
 }
 
-/* article sobre la imagen (about) */
 .hero article {
     position: absolute;
     left: 24px;
@@ -171,7 +163,7 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   BOTÓN-LINK (reutilizable)
+   BOTÓN
    ========================================================== */
 .btn {
     display: inline-block;
@@ -193,7 +185,7 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   SECCIONES (about y contact)
+   SECCIONES 
    ========================================================== */
 .section-block {
     margin: 32px 16px;
@@ -216,7 +208,6 @@ header nav a[aria-current="page"] {
     padding: 0;
 }
 
-/* galería (about) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -253,7 +244,6 @@ header nav a[aria-current="page"] {
    HOME
    ========================================================== */
 
-/* cuadro see trips */
 .trips-cta {
     max-width: 420px;
     margin: 32px auto 0;
@@ -306,7 +296,7 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   FORMULARIOS (home y contact)
+   FORM
    ========================================================== */
 fieldset {
     display: grid;
@@ -432,7 +422,6 @@ button:hover {
     margin: 0 16px;
 }
 
-/* Google Map (estilos aquí, no en línea) */
 .contact-layout iframe {
     display: block;
     width: 100%;
@@ -450,7 +439,6 @@ button:hover {
     box-shadow: var(--shadow);
 }
 
-/* cards de empleados */
 .team {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -505,7 +493,7 @@ button:hover {
 }
 
 /* ==========================================================
-   FOOTER (texto a la izquierda, íconos a la derecha)
+   FOOTER 
    ========================================================== */
 footer {
     display: grid;
@@ -542,64 +530,4 @@ footer p {
 
 .socialmedia a:hover img {
     background-color: var(--accent3-color);
-}
-
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
-@media (max-width: 900px) {
-    .hero article {
-        position: static;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .contact-layout {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        row-gap: 0.75rem;
-    }
-
-    header nav {
-        justify-content: center;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-        row-gap: 12px;
-        text-align: center;
-    }
-
-    .socialmedia {
-        justify-content: center;
-    }
-
-    .trips-cta {
-        margin: 32px 16px 0;
-    }
-
-    .images {
-        grid-template-columns: 1fr;
-    }
-
-    .data,
-    .message-purpose,
-    .Message {
-        grid-template-columns: 1fr;
-        gap: 6px;
-    }
-
-    .hero article img {
-        width: 110px;
-    }
-
-    .contact-layout iframe {
-        min-height: 280px;
-    }
 }
