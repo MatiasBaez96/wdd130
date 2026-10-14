@@ -63,7 +63,7 @@ article {
 }
 
 /* ==========================================================
-   HEADER 
+   HEADER
    ========================================================== */
 header {
     display: grid;
@@ -110,7 +110,7 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   HERO 
+   HERO
    ========================================================== */
 .hero {
     position: relative;
@@ -185,7 +185,38 @@ header nav a[aria-current="page"] {
 }
 
 /* ==========================================================
-   SECCIONES 
+   CALL TO ACTION
+   ========================================================== */
+.trips-cta,
+.contact-cta {
+    max-width: 420px;
+    margin: 32px auto 0;
+    padding: 24px;
+    text-align: center;
+    border-radius: var(--radius);
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.contact-cta {
+    margin-bottom: 32px;
+}
+
+.trips-cta h2,
+.contact-cta h2 {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.trips-cta p,
+.contact-cta p {
+    margin: 8px 0 16px;
+    padding: 0;
+    color: var(--accent3-color);
+}
+
+/* ==========================================================
+   SECCIONES
    ========================================================== */
 .section-block {
     margin: 32px 16px;
@@ -206,6 +237,30 @@ header nav a[aria-current="page"] {
 .section-block p {
     margin: 8px 0;
     padding: 0;
+}
+
+.contact-info,
+.page-banner {
+    margin: 32px 16px;
+    padding: 24px;
+    text-align: center;
+    border-radius: var(--radius);
+    background-color: var(--primary-color);
+}
+
+.contact-info h1,
+.page-banner h1 {
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.contact-info h2,
+.page-banner h2 {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--accent3-color);
 }
 
 .gallery {
@@ -243,28 +298,6 @@ header nav a[aria-current="page"] {
 /* ==========================================================
    HOME
    ========================================================== */
-
-.trips-cta {
-    max-width: 420px;
-    margin: 32px auto 0;
-    padding: 24px;
-    text-align: center;
-    border-radius: var(--radius);
-    background-color: var(--primary-color);
-    box-shadow: var(--shadow);
-}
-
-.trips-cta h2 {
-    font-size: 1.4rem;
-    color: var(--white);
-}
-
-.trips-cta p {
-    margin: 8px 0 16px;
-    padding: 0;
-    color: var(--accent3-color);
-}
-
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -385,27 +418,6 @@ button:hover {
 /* ==========================================================
    CONTACT
    ========================================================== */
-.contact-info {
-    margin: 32px 16px;
-    padding: 24px;
-    text-align: center;
-    border-radius: var(--radius);
-    background-color: var(--primary-color);
-}
-
-.contact-info h1 {
-    margin-bottom: 8px;
-    font-size: 2.2rem;
-    color: var(--white);
-}
-
-.contact-info h2 {
-    font-family: var(--body-font);
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--accent3-color);
-}
-
 .contact-info a {
     color: var(--accent3-color);
     text-underline-offset: 3px;
@@ -493,7 +505,128 @@ button:hover {
 }
 
 /* ==========================================================
-   FOOTER 
+   TRIPS
+   ========================================================== */
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 0 16px;
+    padding: 0;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.trip-card:hover {
+    transform: translateY(-4px);
+}
+
+.trip-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 4px solid var(--accent2-color);
+}
+
+.trip-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.trip-body h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.trip-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.trip-meta li {
+    padding: 2px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: var(--accent3-color);
+}
+
+.trip-body p {
+    margin: 8px 0;
+    padding: 0;
+}
+
+.trip-body .price {
+    margin-top: auto;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--accent2-color);
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+caption {
+    margin-bottom: 8px;
+    text-align: left;
+    font-style: italic;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #d8d1c2;
+}
+
+thead th {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+tbody th {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent3-color);
+}
+
+tbody tr:hover {
+    background-color: #ebe3d3;
+}
+
+/* ==========================================================
+   FOOTER
    ========================================================== */
 footer {
     display: grid;
@@ -530,4 +663,71 @@ footer p {
 
 .socialmedia a:hover img {
     background-color: var(--accent3-color);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 900px) {
+    .hero article {
+        position: static;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .trip-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 0.75rem;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+        text-align: center;
+    }
+
+    .socialmedia {
+        justify-content: center;
+    }
+
+    .trips-cta,
+    .contact-cta {
+        margin: 32px 16px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .data,
+    .message-purpose,
+    .Message {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .hero article img {
+        width: 110px;
+    }
+
+    .contact-layout iframe {
+        min-height: 280px;
+    }
 }
